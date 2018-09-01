@@ -10,3 +10,19 @@
     e. parent - 父级/上一级内容
     f. attrs - 属性
     g. find、find_all - 查找某个属性
+
+1. 对象的种类
+    Tag, NavigableString, BeautifulSoup, Comment
+    a. <class 'bs4.element.Tag'>
+        a1. tag - 对应html原始网页的一个实际tag，其具有很多属性和方法
+        a2. tag.name - tag的名字，修改name将直接修改html
+        a3. tag.attrs - tag的属性，可以将类型视为dict类型执行添加、删除、修改操作
+    b. <class 'bs4.element.NavigableString'>
+        tag.string即为NavigableString类型
+        b1. tag.string - 获取tag部分的字符串，类型为<class 'bs4.element.NavigableString'>
+        b2. tag.string - 类型近似unicode字符串，可以直接使用unicode(tag.string)转为unicode字符串
+        b3. tag.string - 不能直接被修改，仅能使用replace_with修改字符串内容
+    c. <class 'bs4.BeautifulSoup'>
+        BeautifulSoup为表示整个文档的类，name将输出[document]不对应实际的html或者xml标签
+    d. <class 'bs4.element.Comment'>
+        <class 'bs4.element.Comment'>为<class 'bs4.element.NavigableString'>的特例，用法同tag.string操作
