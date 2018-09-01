@@ -1,0 +1,12 @@
+############################
+# a. 教程地址https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+# b. 所有代码基于BeautifulSoup4，Python2.x和Python3.x中的执行结果相同
+############################
+0. 用法汇总
+    a. prettify - 将html格式化，变成可读性、对齐性更好的网页
+    b. title - 打印整个<title>到</title>之间的内容
+    c. name - 打印本tag的名称
+    d. string - 打印出字符串
+    e. parent - 父级/上一级内容
+    f. attrs - 属性
+    g. find、find_all - 查找某个属性
